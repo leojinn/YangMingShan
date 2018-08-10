@@ -98,11 +98,11 @@ static const CGFloat YMSPhotoFetchScaleResizingRatio = 0.75;
 
     self.navigationBar.items = @[navigationItem];
 
-    if (![self.theme.navigationBarBackgroundColor isEqual:[UIColor whiteColor]]) {
-        [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-        [self.navigationBar setShadowImage:[UIImage new]];
+//    if (![self.theme.navigationBarBackgroundColor isEqual:[UIColor whiteColor]]) {
+//        [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+//        [self.navigationBar setShadowImage:[UIImage new]];
         self.navigationBarBackgroundView.backgroundColor = self.theme.navigationBarBackgroundColor;
-    }
+//    }
     
     [self updateViewWithCollectionItem:[self.collectionItems firstObject]];
 

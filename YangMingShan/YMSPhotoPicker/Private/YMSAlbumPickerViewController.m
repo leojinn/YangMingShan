@@ -60,12 +60,12 @@ static const CGFloat YMSNavigationBarOriginalTopSpace = 0.0;
 
     self.navigationBar.items = @[navigationItem];
     
-    if (![[YMSPhotoPickerTheme sharedInstance].navigationBarBackgroundColor isEqual:[UIColor whiteColor]]) {
-        [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-        [self.navigationBar setShadowImage:[UIImage new]];
+//    if (![[YMSPhotoPickerTheme sharedInstance].navigationBarBackgroundColor isEqual:[UIColor whiteColor]]) {
+//        [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+//        [self.navigationBar setShadowImage:[UIImage new]];
         self.navigationBarBackgroundView.backgroundColor = [YMSPhotoPickerTheme sharedInstance].navigationBarBackgroundColor;
         self.albumListTableView.tintColor = [YMSPhotoPickerTheme sharedInstance].navigationBarBackgroundColor;
-    }
+//    }
 
     self.albumListTableView.delegate = self;
     self.albumListTableView.dataSource = self;
